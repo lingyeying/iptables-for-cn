@@ -6,6 +6,8 @@
 ```
 mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
 wget https://mirrors.163.com/.help/CentOS7-Base-163.repo -O /etc/yum.repos.d/CentOS7-Base-163.repo
+yum clean all
+yum makecache
 ```
 ## Percona
 ```
@@ -13,15 +15,11 @@ cp /etc/yum.repos.d/percona-original-release.repo /etc/yum.repos.d/percona-origi
 cp /etc/yum.repos.d/percona-prel-release.repo /etc/yum.repos.d/percona-prel-release.repo.bak
 sed -i 's#http://repo.percona.com/#https://mirrors.tuna.tsinghua.edu.cn/#g' /etc/yum.repos.d/percona-original-release.repo
 sed -i 's#http://repo.percona.com/#https://mirrors.tuna.tsinghua.edu.cn/percona/#g' /etc/yum.repos.d/percona-prel-release.repo
-yum clean all
-yum makecache
 ```
 ## epel
 ```
 mv /etc/yum.repos.d/epel.repo /etc/yum.repos.d/epel.repo.bak
 wget -O /etc/yum.repos.d/epel-7.repo http://mirrors.aliyun.com/repo/epel-7.repo
-yum clean all
-yum makecache
 ```
 ## MySQL 5.7
 ```
