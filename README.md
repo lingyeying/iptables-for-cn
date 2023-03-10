@@ -29,4 +29,5 @@ sed -i 's#http://repo.mysql.com/yum/mysql-tools-community/el/7/#https://mirrors.
 ```
 
 清华大学开源软件镜像站: https://mirrors.tuna.tsinghua.edu.cn/
+
 网易开源镜像站: https://mirrors.163.com/
