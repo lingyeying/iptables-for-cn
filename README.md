@@ -27,3 +27,6 @@ sed -i 's#http://repo.mysql.com/yum/mysql-5.7-community/el/7/#https://mirrors.tu
 sed -i 's#http://repo.mysql.com/yum/mysql-connectors-community/el/7/#https://mirrors.tuna.tsinghua.edu.cn/mysql/yum/mysql-connectors-community-el7-#g' /etc/yum.repos.d/mysql-community.repo
 sed -i 's#http://repo.mysql.com/yum/mysql-tools-community/el/7/#https://mirrors.tuna.tsinghua.edu.cn/mysql/yum/mysql-tools-community-el7-#g' /etc/yum.repos.d/mysql-community.repo
 ```
+
+清华大学开源软件镜像站: https://mirrors.tuna.tsinghua.edu.cn/
+网易开源镜像站: https://mirrors.163.com/
